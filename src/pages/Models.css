@@ -1,0 +1,121 @@
+.models-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.models-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.models-intro {
+  color: var(--gray-600);
+  margin-bottom: 2rem;
+}
+
+.model-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric {
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.chart-container {
+  margin-top: 1rem;
+  height: 300px;
+  width: 100%;
+}
+
+.som-description {
+  margin-bottom: 1rem;
+  color: var(--gray-700);
+}
+
+.som-visualization {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.forecast-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.forecast-week {
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-label {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  margin-bottom: 0.25rem;
+}
+
+.forecast-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .models-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .model-actions {
+    flex-direction: column;
+  }
+  
+  .model-actions button {
+    width: 100%;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
